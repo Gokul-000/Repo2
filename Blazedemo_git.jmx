@@ -47,6 +47,16 @@
             <stringProp name="Argument.value">blazedemo.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="fromport" elementType="Argument">
+            <stringProp name="Argument.name">fromport</stringProp>
+            <stringProp name="Argument.value">Paris</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="toport" elementType="Argument">
+            <stringProp name="Argument.name">toport</stringProp>
+            <stringProp name="Argument.value">London</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
       </Arguments>
       <hashTree/>
@@ -146,14 +156,14 @@
                 <elementProp name="fromPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">fromPort</stringProp>
-                  <stringProp name="Argument.value">Paris</stringProp>
+                  <stringProp name="Argument.value">${fromport}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="toPort" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">toPort</stringProp>
-                  <stringProp name="Argument.value">London</stringProp>
+                  <stringProp name="Argument.value">${toport}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
